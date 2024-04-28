@@ -18,7 +18,7 @@ class AuthController {
 
         try {
             const result = await UserService.getInstance().loginUsername(username, password);
-            console.log('RESULT', result)
+            console.log('Is Login', result)
             response.status(200).send(result);
         } catch (error) {
             console.error(error);
